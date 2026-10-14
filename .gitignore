@@ -1,0 +1,10 @@
+# 本地记忆、私人页面截图和缓存不进入公开仓库。
+/ai_codex.md
+/AGENTS.md
+/preview*.png
+!/preview-docs.png
+*.zip
+/dist/
+.env
+.env.*
+node_modules/

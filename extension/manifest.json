@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Kylon 简体中文",
+  "version": "1.2.1",
+  "description": "为 Kylon 应用和文档增加简体中文选项，离线翻译，保留消息、输入和代码。",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.kylon.io/*"],
+      "js": ["phrases.js", "content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://docs.kylon.io/*"],
+      "js": ["phrases.js", "docs-phrases.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
